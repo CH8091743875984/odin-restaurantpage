@@ -1,0 +1,15 @@
+.menuItem {
+    border: 1px solid black;
+}
+
+.itemTitle {
+    font-weight: bold;
+}
+
+.itemPicture {
+    height: 100px;
+}
+
+.itemDescription {
+    font-style: italic;
+}

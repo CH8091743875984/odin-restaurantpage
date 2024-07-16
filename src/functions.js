@@ -1,3 +1,5 @@
+//run both npx and the script for updating the live preview
+
 export function createHomeDiv () {
     console.log('calling this')
     clearContentDiv()
@@ -61,7 +63,7 @@ export function createMenuDiv () {
 
         const itemImg = document.createElement('img')
         itemImg.src = menuObject[i].itemImg
-        itemImg.height = 100
+        itemImg.classList.add('itemPicture')
         menuItem.appendChild(itemImg)
 
         const itemDescription = document.createElement('div')
