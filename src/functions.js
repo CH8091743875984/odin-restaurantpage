@@ -123,14 +123,21 @@ export function createAboutDiv () {
 
     const parentDiv = document.querySelector('#content')
 
-    parentDiv.textContent = "placeholder for about content!"
+    const aboutDiv = document.createElement('div')
+    aboutDiv.classList.add('aboutContent')
+
+    const aboutText = document.createElement('div')
+    aboutText.classList.add('aboutText')
+    aboutText.textContent = "Restaurant established 2024. Recipes established many centuries ago."
+    aboutDiv.appendChild(aboutText)
 
 
     const menuImg = document.createElement('img')
     menuImg.src = "https://wallpaperaccess.com/full/261540.jpg"
     menuImg.height = 300
-    parentDiv.appendChild(menuImg)
+    aboutDiv.appendChild(menuImg)
 
+    parentDiv.appendChild(aboutDiv)
 
 }
 

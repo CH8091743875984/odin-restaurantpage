@@ -94,3 +94,14 @@ nav > button:hover {
     font-size: 10pt;
 }
 
+.aboutContent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    gap: 5px;
+}
+
+.aboutText {
+    text-align: center;
+}
